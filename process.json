@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "name": "viens-hier-api",
+      "script": "index.js",
+      "env": {
+        "USER": "detroitnojoum@gmail.com",
+        "PASS": "ckfiyfpcervphnhq" 
+      }
+    }
+  ]
+}
