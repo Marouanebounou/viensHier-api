@@ -34,8 +34,8 @@ const getTransporter = () => {
             port: 587,
             secure: false, // true for port 465, false for other ports
             auth: {
-                user: 'maroinbounou.123@gmail.com', // Your Gmail address
-                pass: 'sdofkcgcyexhyqry', // Your Gmail App Password (NOT regular password)
+                user: 'detroitnojoum@gmail.com', // Your Gmail address
+                pass: 'ckfiyfpcervphnhq', // Your Gmail App Password (NOT regular password)
             },
             // Add connection pooling for better performance
             pool: true,
