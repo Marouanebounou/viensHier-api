@@ -10,15 +10,15 @@ app.use(express.json());
 
 connectDB();
 
-{/*const corsOptions = {
+const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
     ? [process.env.BASE_URL] 
-    : ["http://localhost:5173"],  
+    : ["https://vienshier.netlify.app/"],  
   credentials: true,
   allowedHeaders: ["Content-Type", "Authorization"],
 };
-*/}
-app.use(cors());
+
+app.use(cors(corsOptions));
 app.use('/api', invitation);
 
 app.get("/", (req, res) => {
