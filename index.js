@@ -12,13 +12,13 @@ connectDB();
 
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
-    ? [process.env.BASE_URL] 
-    : ["https://vienshier.netlify.app/"],  
+    ? ["https://viens-hier-virid.vercel.app/"] 
+    : ["https://viens-hier-virid.vercel.app/"],  
   credentials: true,
   allowedHeaders: ["Content-Type", "Authorization"],
 };
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use('/api', invitation);
 
 app.get("/", (req, res) => {
